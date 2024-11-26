@@ -1,0 +1,16 @@
+:root {
+    --main-color-1: black;
+    --main-color-2: yellow;
+    --main-color-3: white;
+    --main-color-4: gray;
+
+  }
+
+body {
+  background-color: var(--main-color-1);;
+}
+ 
+.svg-logo, .svg-github, .svg-slack, .svg-twitter, .svg-open-collective {
+  fill: var(--main-color-2);
+}
+
