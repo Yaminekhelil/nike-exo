@@ -362,5 +362,10 @@ li>a:only-child:after {
         width: calc(100%/1);
     }
 
+    .size-icon{
+        width: 30px;
+    }
+
+
 
 }
