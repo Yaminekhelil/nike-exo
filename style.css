@@ -21,6 +21,14 @@
     fill: var(--main-color-3);
 }
 
+.svg-logo:hover,
+.svg-github:hover,
+.svg-slack:hover,
+.svg-twitter:hover,
+.svg-open-collective:hover {
+    fill: var(--main-color-2);
+    transition: 0.5s;
+}
 
 
 
@@ -163,8 +171,7 @@ li>a:only-child:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-
+   
 
 
 }
@@ -174,7 +181,7 @@ li>a:only-child:after {
     width: 30%;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    
 
 }
 
@@ -196,7 +203,7 @@ li>a:only-child:after {
 
 .centertool {
     aspect-ratio: 1/1;
-    flex: calc(100%/3);
+    width: calc(100%/3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,12 +239,122 @@ li>a:only-child:after {
     transform: rotate(-10deg);
 }
 
+.top {
+    position: relative;
+}
+
+
 @media screen and (max-width:992px) {
     .backimg {
         display: none;
     }
-  #container {
-    flex-direction: column-reverse;
-  }
-  
+
+    #container {
+        flex-direction: column-reverse;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .div2 {
+        width: 100%;
+    }
+
+    .div3 {
+        width: 100%;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: left;
+        background-color: #212121;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        background-color: yellow
+    }
+
+    .svg-github,
+    .svg-slack,
+    .svg-twitter,
+    .svg-open-collective {
+        fill: var(--main-color-1);
+    }
+
+    .svg-logo {
+        display: flex;
+        fill: var(--main-color-2);
+    }
+
+    .nike1 {
+        display: flex;
+        align-content: center;
+        margin: 50px;
+    }
+
+    .centertool {
+        width: calc(100%/2);
+    }
+    .sneakers {
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .backimg {
+        display: none;
+    }
+
+
+    .top {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #container {
+        flex-direction: column-reverse;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .div2 {
+        width: 100%;
+    }
+
+    .div3 {
+        width: 100%;
+    }
+    .centertool {
+        width: calc(100%/1);
+    }
+
+
 }
