@@ -283,7 +283,9 @@ li>a:only-child:after {
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
-        background-color: yellow
+        background-color: yellow;
+        padding: 10px;
+
     }
 
     .svg-github,
@@ -291,6 +293,10 @@ li>a:only-child:after {
     .svg-twitter,
     .svg-open-collective {
         fill: var(--main-color-1);
+    }
+
+    .size-icon{
+        width: 30px;
     }
 
     .svg-logo {
